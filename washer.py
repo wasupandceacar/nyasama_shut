@@ -1,4 +1,6 @@
 import os.path
+
+#这里填写txt语料的路径
 rootdir = 'G:/语料库/喵玉'
 
 def delUseless(infile,outfile):
@@ -89,7 +91,7 @@ def delUseless(infile,outfile):
 
 #遍历
 if __name__=="__main__":
-    list = os.listdir(rootdir)  # 列出文件夹下所有的目录与文件
+    list = os.listdir(rootdir)
     dir = "/washed/"
     if (not os.path.exists(rootdir+dir)):
         os.mkdir(rootdir+dir)
